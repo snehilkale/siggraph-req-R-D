@@ -1,0 +1,106 @@
+
+# 🎯 Customer Churn Predictor
+
+A machine learning system that predicts customer churn using advanced ensemble models (Random Forest and XGBoost) with comprehensive data preprocessing and class imbalance handling.
+
+[![Python Version](https://img.shields.io/badge/Python-3.7%2B-blue.svg)](https://www.python.org/)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+[![scikit-learn](https://img.shields.io/badge/scikit--learn-1.3.0-orange.svg)](https://scikit-learn.org/)
+[![XGBoost](https://img.shields.io/badge/XGBoost-2.0.0-red.svg)](https://xgboost.readthedocs.io/)
+
+## 📋 Table of Contents
+
+- [Overview](#overview)
+- [Features](#features)
+- [Dataset](#dataset)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
+- [Methodology](#methodology)
+- [Model Performance](#model-performance)
+- [Feature Importance](#feature-importance)
+- [Configuration](#configuration)
+- [Results Visualization](#results-visualization)
+- [Troubleshooting](#troubleshooting)
+- [Contributing](#contributing)
+- [License](#license)
+
+## 🎯 Overview
+
+This project implements a robust customer churn prediction system that helps businesses identify customers who are likely to discontinue their services. Using historical customer data, the system employs advanced machine learning techniques to predict churn with high accuracy, enabling proactive retention strategies.
+
+### Business Impact
+
+- **Revenue Protection**: Identify at-risk customers before they churn
+- **Cost Reduction**: Targeted retention efforts instead of broad campaigns
+- **Customer Insights**: Understand key drivers of churn
+- **Resource Optimization**: Focus retention efforts on high-risk customers
+
+## ✨ Features
+
+### Data Processing
+- 🔍 Comprehensive Exploratory Data Analysis (EDA)
+- 🧹 Automated missing value handling
+- 🔢 Categorical variable encoding
+- 📏 Feature scaling and normalization
+- ⚖️ SMOTE for class imbalance
+
+### Machine Learning Models
+- 🌲 **Random Forest** - Ensemble of decision trees
+- 🚀 **XGBoost** - Gradient boosting with regularization
+
+### Evaluation Metrics
+- 📊 Accuracy
+- 📊 Precision
+- 📊 Recall
+- 📊 F1-Score
+- 📊 ROC-AUC Score
+- 📊 Precision-Recall Curves
+- 📊 Confusion Matrix
+- 📊 Cross-Validation
+
+### Visualizations
+- 📈 Correlation heatmap
+- 📈 Feature importance plots
+- 📈 ROC curves
+- 📈 Precision-Recall curves
+- 📈 Model comparison charts
+
+## 📊 Dataset
+
+### Source
+The dataset is the **IBM Telco Customer Churn Dataset**, available from:
+- [Kaggle](https://www.kaggle.com/datasets/muhammadshahidazeem/customer-churn-dataset)
+- [IBM GitHub](https://raw.githubusercontent.com/IBM/telco-customer-churn-on-icp4d/master/data/Telco-Customer-Churn.csv)
+
+### Dataset Statistics
+- **Total Samples**: 7,043 customers
+- **Features**: 20 attributes
+- **Target**: Churn (Yes/No)
+- **Churn Rate**: 26.54%
+- **Missing Values**: None
+
+### Features Description
+
+| Category | Features | Description |
+|----------|----------|-------------|
+| **Demographics** | gender, SeniorCitizen, Partner, Dependents | Customer personal information |
+| **Services** | PhoneService, MultipleLines, InternetService, OnlineSecurity, OnlineBackup, DeviceProtection, TechSupport, StreamingTV, StreamingMovies | Subscribed services |
+| **Account** | tenure, Contract, PaperlessBilling, PaymentMethod | Account information |
+| **Charges** | MonthlyCharges, TotalCharges | Billing amounts |
+| **Target** | Churn | Whether customer left (Yes/No) |
+
+## 🛠️ Installation
+
+### Prerequisites
+- Python 3.7 or higher
+- pip package manager
+- 4GB+ RAM recommended
+- Git (optional)
+
+### Step-by-Step Installation
+
+1. **Clone the repository**
+```bash
+git clone https://github.com/yourusername/customer-churn-predictor.git
+cd customer-churn-predictor

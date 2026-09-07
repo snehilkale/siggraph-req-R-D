@@ -1,0 +1,77 @@
+# 📧 SMS Spam Classifier
+
+A machine learning-powered spam detection system that classifies SMS messages as either spam or legitimate (ham). Built with Python and scikit-learn, this project implements multiple classification algorithms with comprehensive text preprocessing and evaluation.
+
+[![Python Version](https://img.shields.io/badge/Python-3.7%2B-blue.svg)](https://www.python.org/)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+[![scikit-learn](https://img.shields.io/badge/scikit--learn-1.3.0-orange.svg)](https://scikit-learn.org/)
+
+## 📋 Table of Contents
+
+- [Overview](#overview)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Project Structure](#project-structure)
+- [How It Works](#how-it-works)
+- [Models & Performance](#models--performance)
+- [Configuration](#configuration)
+- [Testing](#testing)
+- [Contributing](#contributing)
+- [License](#license)
+- [Acknowledgments](#acknowledgments)
+
+## 🎯 Overview
+
+This project implements a robust SMS spam classifier using natural language processing (NLP) and machine learning techniques. The system can automatically detect spam messages with high accuracy, helping users filter unwanted messages.
+
+### Key Capabilities
+
+- **Text Preprocessing**: Cleans and normalizes raw text data
+- **Feature Extraction**: Converts text to numerical features using TF-IDF
+- **Multiple Models**: Implements 3 different classification algorithms
+- **Comprehensive Evaluation**: Provides detailed performance metrics
+- **Real-time Prediction**: Can classify new messages instantly
+
+## ✨ Features
+
+### Text Preprocessing
+- ✅ Converts text to lowercase
+- ✅ Removes punctuation and special characters
+- ✅ Eliminates stop words
+- ✅ Applies stemming or lemmatization
+- ✅ Handles numbers and whitespace
+
+### Machine Learning
+- 🤖 **Naive Bayes** - Fast and effective for text classification
+- 🤖 **Logistic Regression** - Reliable linear classifier
+- 🤖 **Support Vector Machine** - Powerful for high-dimensional data
+
+### Evaluation Metrics
+- 📊 Accuracy
+- 📊 Precision
+- 📊 Recall
+- 📊 F1-Score
+- 📊 Confusion Matrix
+- 📊 Model Comparison Charts
+
+### User-Friendly
+- 🚀 Simple prediction function
+- 💬 Custom message testing
+- 📈 Visual results
+- 🔍 Confidence scores
+
+## 🛠️ Installation
+
+### Prerequisites
+
+- Python 3.7 or higher
+- pip (Python package installer)
+- Git (optional, for cloning)
+
+### Step-by-Step Installation
+
+1. **Clone the repository (or download manually)**
+```bash
+git clone https://github.com/yourusername/sms-spam-classifier.git
+cd sms-spam-classifier
